@@ -100,9 +100,9 @@ export default async function AboutPage({ params }: PageProps) {
   const Icon = content.icon
 
   return (
-    <div className="min-h-screen bg-background pt-24 md:pt-32">
+    <div className="min-h-screen bg-background pt-20 md:pt-24">
       {/* Banner Hero */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-primary/10 via-background to-accent/5 overflow-hidden">
+      <section className="px-4 sm:px-6 lg:px-8 py-8 bg-gradient-to-br from-primary/10 via-background to-accent/5 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
@@ -143,8 +143,8 @@ export default async function AboutPage({ params }: PageProps) {
       </section>
 
       {/* Main Info */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="max-w-7xl mx-auto space-y-16">
+      <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto space-y-8">
           <div className="max-w-3xl space-y-6">
             <h2 className="text-3xl font-bold text-foreground">Introduction</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -154,9 +154,9 @@ export default async function AboutPage({ params }: PageProps) {
 
           {/* Timeline View */}
           {content.timeline && (
-            <div className="space-y-12">
+            <div className="space-y-6">
               <h3 className="text-2xl font-bold text-foreground">Our History & Milestones</h3>
-              <div className="relative border-l-2 border-primary/20 ml-4 md:ml-6 space-y-12">
+              <div className="relative border-l-2 border-primary/20 ml-4 md:ml-6 space-y-6">
                 {content.timeline.map((item, index) => (
                   <div key={index} className="relative pl-8 md:pl-12">
                     {/* Circle Bullet */}
@@ -174,7 +174,7 @@ export default async function AboutPage({ params }: PageProps) {
 
           {/* Values Grid */}
           {content.values && (
-            <div className="space-y-12">
+            <div className="space-y-6">
               <h3 className="text-2xl font-bold text-foreground text-center">Core Pillars of HealthCare</h3>
               <div className="grid md:grid-cols-3 gap-8">
                 {content.values.map((val, index) => {
@@ -212,7 +212,7 @@ export default async function AboutPage({ params }: PageProps) {
 
           {/* Leadership Team View */}
           {content.team && (
-            <div className="space-y-12">
+            <div className="space-y-6">
               <h3 className="text-2xl font-bold text-foreground">Meet Our Advisors & Directors</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {content.team.map((member, index) => (

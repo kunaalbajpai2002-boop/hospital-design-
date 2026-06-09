@@ -90,9 +90,9 @@ export default async function CareersPage({ params }: PageProps) {
   const Icon = content.icon
 
   return (
-    <div className="min-h-screen bg-background pt-24 md:pt-32">
+    <div className="min-h-screen bg-background pt-20 md:pt-24">
       {/* Banner Hero */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-br from-primary/10 via-background to-accent/5 overflow-hidden">
+      <section className="px-4 sm:px-6 lg:px-8 py-8 bg-gradient-to-br from-primary/10 via-background to-accent/5 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-12 gap-8 items-center">
             {/* Left Content */}
@@ -144,7 +144,7 @@ export default async function CareersPage({ params }: PageProps) {
       </section>
 
       {/* Main Content Info */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12">
           {/* Main Content Area */}
           <div className="lg:col-span-2 space-y-12">
