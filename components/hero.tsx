@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowRight, HeartPulse, Phone, Star, Award, ShieldCheck } from 'lucide-react'
 import Image from "next/image"
+import SubHeader from './subheader'
 
 const stats = [
   { value: '25+', label: 'Specialties' },
@@ -37,7 +38,7 @@ export function HeroSection() {
   const [mounted, setMounted] = useState(false)
 
   const heroImages = [
-    "/zoshua-colah-_fdWqec7VRo-unsplash..png",
+    "/zoshua-colah-_fdWqec7VRo-unsplash.png",
     "/pexels-jo-mcnamara-185550273-11288665.jpg",
     "/pexels-cristian-rojas-8460379.jpg",
     "/adhy-savala-zbpgmGe27p8-unsplash.jpg",
@@ -59,7 +60,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative pt-20 md:pt-28 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-24 md:pt-28 pb-4 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/10 -z-10" />
       {/* Grid texture overlay */}
@@ -76,20 +77,17 @@ export function HeroSection() {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/15 rounded-full blur-3xl -z-10 translate-y-[30%]" />
 
       <div className="max-w-7xl mx-auto">
+        <div className="mb-10">
+          <SubHeader />
+        </div>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── Left Content ── */}
           <div
-            className={`space-y-8 transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+            className={`space-y-6 transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
           >
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold border border-primary/20 w-fit">
-              <ShieldCheck className="w-4 h-4" />
-
-            </div>
-
             {/* Headline */}
-            <div className="space-y-4">
+            <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.1] tracking-tight text-balance">
                 Excellence in{' '}
                 <span className="relative inline-block">

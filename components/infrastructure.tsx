@@ -64,10 +64,10 @@ export function InfrastructureSection() {
   const activeTabData = tabs.find((tab) => tab.id === activeTab)
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/5">
+    <section className="py-6 md:py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/5">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
             World-Class Infrastructure
           </h2>
@@ -77,7 +77,7 @@ export function InfrastructureSection() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-6">
           {tabs.map((tab) => {
             const Icon = tab.icon
             return (
@@ -98,7 +98,7 @@ export function InfrastructureSection() {
         </div>
 
         {/* Tab Content */}
-        <div className="bg-card border border-border rounded-3xl p-8 md:p-12">
+        <div className="bg-card border border-border rounded-3xl p-6 md:p-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
@@ -146,7 +146,7 @@ export function InfrastructureSection() {
         </div>
 
         {/* Stats Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
           {[
             { number: '500+', label: 'Hospital Beds' },
             { number: '100+', label: 'Operation Theatres' },

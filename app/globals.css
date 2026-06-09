@@ -147,9 +147,6 @@
   animation: bounce-slow 3s ease-in-out infinite;
 }
 
-
-/* Your existing styles here */
-
 @keyframes card-float {
 
   0%,

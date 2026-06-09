@@ -47,11 +47,11 @@ export function TestimonialsSection() {
   const t = testimonials[current]
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-accent/5 to-background">
+    <section className="py-6 md:py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-accent/5 to-background">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
+        <div className="text-center mb-8 space-y-4">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-semibold rounded-full border border-primary/20">
             Patient Stories
           </span>
@@ -65,7 +65,7 @@ export function TestimonialsSection() {
 
         {/* Main Testimonial Card */}
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-card border border-border rounded-3xl p-8 md:p-12 shadow-xl">
+          <div className="relative bg-card border border-border rounded-3xl p-6 md:p-8 shadow-xl">
             {/* Quote icon */}
             <div className="absolute top-8 right-8 md:top-12 md:right-12">
               <Quote className="w-12 h-12 text-primary/10" />
@@ -139,7 +139,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Summary Stat Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
           {[
             { value: '4.9★', label: 'Average Rating', sub: 'Across all departments' },
             { value: '98%', label: 'Satisfaction Rate', sub: 'Post-discharge surveys' },

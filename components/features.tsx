@@ -46,11 +46,11 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="py-6 md:py-8 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
+        <div className="text-center mb-8 space-y-4">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-semibold rounded-full border border-primary/20">
             Why Choose Us
           </span>
@@ -93,7 +93,7 @@ export function FeaturesSection() {
         </div>
 
         {/* CTA Banner */}
-        <div className="mt-16 relative rounded-3xl overflow-hidden">
+        <div className="mt-8 relative rounded-3xl overflow-hidden">
           {/* Background */}
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80" />
           <div
